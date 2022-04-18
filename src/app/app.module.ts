@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import { MygithubComponent } from './mygithub/mygithub.component';
 import { GitFormComponent } from './git-form/git-form.component';
 import { UserComponent } from './user/user.component';
+import { RepositoryComponent } from './repository/repository.component';
+
 
 
 
@@ -15,7 +17,8 @@ import { UserComponent } from './user/user.component';
     AppComponent,
     MygithubComponent,
     GitFormComponent,
-    UserComponent
+    UserComponent,
+    RepositoryComponent,
   ],
   imports: [
     BrowserModule,
