@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MygithubComponent } from './mygithub/mygithub.component';
 import { GitFormComponent } from './git-form/git-form.component';
+import { UserComponent } from './user/user.component';
 
 
 
@@ -13,7 +14,8 @@ import { GitFormComponent } from './git-form/git-form.component';
   declarations: [
     AppComponent,
     MygithubComponent,
-    GitFormComponent
+    GitFormComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,
