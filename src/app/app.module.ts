@@ -9,6 +9,7 @@ import { GitFormComponent } from './git-form/git-form.component';
 import { UserComponent } from './user/user.component';
 import { RepositoryComponent } from './repository/repository.component';
 import { RepositoryDetailsComponent } from './repository-details/repository-details.component';
+import { UserDetailsComponent } from './user-details/user-details.component';
 
 
 
@@ -21,6 +22,7 @@ import { RepositoryDetailsComponent } from './repository-details/repository-deta
     UserComponent,
     RepositoryComponent,
     RepositoryDetailsComponent,
+    UserDetailsComponent,
   ],
   imports: [
     BrowserModule,
