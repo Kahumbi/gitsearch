@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-git-form',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GitFormComponent implements OnInit {
 
-  constructor() { }
 
-  ngOnInit(): void {
-  }
+	ngOnInit() {
+	}
 
 }
+
+
+

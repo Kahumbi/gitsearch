@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Users } from '../users';
+import { SearchGithubService } from '../search-github.service';
 
 @Component({
   selector: 'app-mygithub',
@@ -11,7 +12,8 @@ export class MygithubComponent implements OnInit {
 
 gwagon:string = "assets/Images/gwagon.jpeg"
 
-  constructor() { }
+  // constructor() { }
+
 
   ngOnInit(): void {
   }
