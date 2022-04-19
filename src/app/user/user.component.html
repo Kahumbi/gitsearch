@@ -1,12 +1,12 @@
 <div class="container">
     <div class="row justify-content-center ">
-        <div class="col-7  bg-body my-4 rounded shadow-sm pt-4">
+        <div class="col  bg-body my-4 rounded shadow-sm pt-4">
           <div class="row justify-content-evenly">
                   <div class="col-6 ">
                     <input type="text" [formControl]="name" class="form-control" id="username" placeholder="@github username">
                   </div>
                   <div class="col-3">
-                    <button (click)="searchGithub()" type ="submit" class="btn-success">Search</button>
+                    <button (click)="searchGithub()" type ="submit" class="btn-danger">Search</button>
                   </div>
                 </div>
         </div>
@@ -14,7 +14,7 @@
     
     <div class="row justify-content-center">
         <div class="col-8  bg-Road my-4 rounded shadow-sm pt-2">
-            <h4 class="text-center mb-2">User github Information</h4>
+            <h4 class="text-center">User github Information</h4>
             <hr>
                 <app-user-details [user]="user"></app-user-details>
         </div>
