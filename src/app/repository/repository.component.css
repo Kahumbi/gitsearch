@@ -14,4 +14,14 @@
 
 h5{
     color: #06113C;
+    font-size: large;
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+
+.work{
+    border-radius: 80px;
+  
 }
