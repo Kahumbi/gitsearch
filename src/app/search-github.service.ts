@@ -22,4 +22,14 @@ export class SearchGithubService {
     return promise
 
   }
+
+  getRepo(username:string):any {
+
+    const promise = new Promise((resolve, reject) =>{
+      resolve(firstValueFrom(this.http.get(`https://api.github.com/users/${username}/repos`)))
+    })
+
+    return promise
+
+  }
 }

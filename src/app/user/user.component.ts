@@ -13,9 +13,7 @@ export class UserComponent implements OnInit {
   name = new FormControl('');
   user:Users;
   searchGithubService:SearchGithubService;
-  /*
-    name,url avatar_url, public_repos, followers, fol
-  */
+  
 
   constructor(searchGithubService:SearchGithubService) {
     this.searchGithubService = searchGithubService
@@ -26,9 +24,10 @@ export class UserComponent implements OnInit {
 
   searchGithub(){
     console.log(this.name.value)
+    this.getInforWithPromise(this.name.value)
   }
 
-  async getInfoWithPromise(username:string){
+  async getInforWithPromise(username:string){
     await this.searchGithubService.getUserInfor(username).then((data:any) => {
       this.user.name = data.name;
       this.user.avatar_url = data.avatar_url;
