@@ -1,8 +1,10 @@
 .container{
     background-color: #F8B400;
 }
+
+
 .text-center{
-    color: aqua;
+    color: #06113C;
     font-size: xx-large;
     font-family: sans-serif;
     font-weight: bolder;
@@ -10,3 +12,6 @@
 }
 
 
+h5{
+    color: #06113C;
+}
