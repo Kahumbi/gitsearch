@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { FormControl, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-git-form',
@@ -8,6 +9,15 @@ import { NgForm } from '@angular/forms';
 })
 export class GitFormComponent implements OnInit {
 
+  @Output() inputValue = new EventEmitter<string>();
+  name = new FormControl('',Validators.required);
+
+  searchGithub(name:string){
+    this.inputValue.emit(name);
+  }
+
+  constructor() {
+  }
 
 	ngOnInit() {
 	}
